@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "Bk. St. moon light",
+  "version": "2.0",
+
+  "description": "Improves baker-forum.ir website UX from client side.",
+
+  "icons": {
+    "222": "icons/bloodmoon-222.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://baker-forum.ir/"],
+      "js": ["lib/pickr/dist/pickr.min.js", "content-scripts/SBColorUp.js"],
+      "css": ["lib/pickr/dist/themes/monolith.min.css"]
+    }
+  ],
+
+  "permissions": [
+    "storage"
+  ]
+}
